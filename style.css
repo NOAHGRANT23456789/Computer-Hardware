@@ -1,0 +1,386 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  #sidebar {
+    flex: 0 0 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  #content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }/* Add styles for the component information */
+.component-info {
+    display: none;
+  }
+  
+  /* Styles for component links */
+  #componentList a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #componentList a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add styles for component information */
+  .component-info {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .component-info h2 {
+    color: #333;
+  }
+  
+  .component-info p {
+    color: #555;
+  }/* Body background color */
+body {
+    background-color: #f9f9f9;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main content area */
+  main {
+    display: flex;
+  }
+  
+  /* Sidebar styles */
+  #sidebar {
+    flex: 0 0 25%;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  #componentList a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #componentList a:hover {
+    background-color: #bbb;
+  }
+  
+  /* Content area styles */
+  #content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Component information styles */
+  .component-info {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .component-info h2 {
+    color: #333;
+  }
+  
+  .component-info p {
+    color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }/* Body background color */
+body {
+    background-color: #f0f7ff; /* Light blue */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #0047ab; /* Dark blue */
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Sidebar styles */
+  #sidebar {
+    flex: 0 0 25%;
+    background-color: #cfe2f3; /* Lighter blue */
+    padding: 20px;
+  }
+  
+  #componentList a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #bdd5ea; /* Lighter grayish blue */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #componentList a:hover {
+    background-color: #a3bed6; /* Darker grayish blue */
+  }
+  
+  /* Content area styles */
+  #content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Component information styles */
+  .component-info {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .component-info h2 {
+    color: #333;
+  }
+  
+  .component-info p {
+    color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #0047ab; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }/* Body background color */
+body {
+    background-color: #f0f7ff; /* Light blue */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #0047ab; /* Dark blue */
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Sidebar styles */
+  #sidebar {
+    flex: 0 0 25%;
+    background-color: #cfe2f3; /* Lighter blue */
+    padding: 20px;
+  }
+  
+  #componentList a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #bdd5ea; /* Lighter grayish blue */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #componentList a:hover {
+    background-color: #a3bed6; /* Darker grayish blue */
+  }
+  
+  /* Content area styles */
+  #content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f7ff; /* Light blue */
+    border-radius: 5px;
+  }
+  
+  /* Component information styles */
+  .component-info {
+    display: none;
+    padding: 20px;
+    background-color: #ffa500; /* Orange */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .component-info h2 {
+    color: #333;
+  }
+  
+  .component-info p {
+    color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #0047ab; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }/* Body font family */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header and navigation font family */
+  header h1,
+  nav ul li a {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Content area font family */
+  #content,
+  .component-info {
+    font-family: 'Roboto', sans-serif;
+  }.component-info {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .component-info h2 {
+    color: #333;
+  }
+  
+  .component-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .component-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .component-info ul li strong {
+    font-weight: bold;
+  }
+  
