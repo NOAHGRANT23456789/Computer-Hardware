@@ -1,386 +1,112 @@
-/* Reset default margin and padding */
-* {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f9f/* General reset and styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
     display: flex;
-  }
-  
-  #sidebar {
-    flex: 0 0 25%;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  #content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }/* Add styles for the component information */
-.component-info {
-    display: none;
-  }
-  
-  /* Styles for component links */
-  #componentList a {
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    color: #333;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  #componentList a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Add styles for component information */
-  .component-info {
-    display: none;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .component-info h2 {
-    color: #333;
-  }
-  
-  .component-info p {
-    color: #555;
-  }/* Body background color */
-body {
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #f9f9f9;
   }
   
-  /* Header styles */
   header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    text-align: center;
   }
   
   header h1 {
     margin: 0;
+    font-size: 2rem;
   }
   
-  nav ul {
-    list-style-type: none;
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
+  header nav ul li {
+    margin: 0 1rem;
   }
   
-  nav ul li a {
+  header nav ul li a {
     color: #fff;
     text-decoration: none;
   }
   
-  /* Main content area */
   main {
     display: flex;
-  }
-  
-  /* Sidebar styles */
-  #sidebar {
-    flex: 0 0 25%;
-    background-color: #ddd;
-    padding: 20px;
-  }
-  
-  #componentList a {
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    color: #333;
-    background-color: #ccc;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  #componentList a:hover {
-    background-color: #bbb;
-  }
-  
-  /* Content area styles */
-  #content {
     flex: 1;
-    padding: 20px;
+  }
+  
+  #sidebar {
     background-color: #fff;
-    border-radius: 5px;
+    padding: 1rem;
+    width: 250px;
+    border-right: 1px solid #ccc;
   }
   
-  /* Component information styles */
-  .component-info {
-    display: none;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .component-info h2 {
-    color: #333;
-  }
-  
-  .component-info p {
-    color: #555;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
+  #sidebar h2 {
     text-align: center;
-    padding: 1rem;
-  }/* Body background color */
-body {
-    background-color: #f0f7ff; /* Light blue */
+    margin-bottom: 1.5rem;
   }
   
-  /* Header styles */
-  header {
-    background-color: #0047ab; /* Dark blue */
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Sidebar styles */
-  #sidebar {
-    flex: 0 0 25%;
-    background-color: #cfe2f3; /* Lighter blue */
-    padding: 20px;
-  }
-  
-  #componentList a {
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    color: #333;
-    background-color: #bdd5ea; /* Lighter grayish blue */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  #componentList a:hover {
-    background-color: #a3bed6; /* Darker grayish blue */
-  }
-  
-  /* Content area styles */
-  #content {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-  }
-  
-  /* Component information styles */
-  .component-info {
-    display: none;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .component-info h2 {
-    color: #333;
-  }
-  
-  .component-info p {
-    color: #555;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #0047ab; /* Dark blue */
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }/* Body background color */
-body {
-    background-color: #f0f7ff; /* Light blue */
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #0047ab; /* Dark blue */
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Sidebar styles */
-  #sidebar {
-    flex: 0 0 25%;
-    background-color: #cfe2f3; /* Lighter blue */
-    padding: 20px;
-  }
-  
-  #componentList a {
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    color: #333;
-    background-color: #bdd5ea; /* Lighter grayish blue */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  #componentList a:hover {
-    background-color: #a3bed6; /* Darker grayish blue */
-  }
-  
-  /* Content area styles */
-  #content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f7ff; /* Light blue */
-    border-radius: 5px;
-  }
-  
-  /* Component information styles */
-  .component-info {
-    display: none;
-    padding: 20px;
-    background-color: #ffa500; /* Orange */
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .component-info h2 {
-    color: #333;
-  }
-  
-  .component-info p {
-    color: #555;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #0047ab; /* Dark blue */
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }/* Body font family */
-body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Header and navigation font family */
-  header h1,
-  nav ul li a {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Content area font family */
-  #content,
-  .component-info {
-    font-family: 'Roboto', sans-serif;
-  }.component-info {
-    display: none;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .component-info h2 {
-    color: #333;
-  }
-  
-  .component-info ul {
-    list-style-type: none;
+  #componentList {
+    list-style: none;
     padding: 0;
   }
   
-  .component-info ul li {
-    margin-bottom: 10px;
+  #componentList li {
+    margin-bottom: 0.5rem;
   }
   
-  .component-info ul li strong {
+  #componentList a {
+    color: #333;
+    text-decoration: none;
     font-weight: bold;
   }
   
+  #componentList a:hover {
+    color: #007bff;
+  }
+  
+  #content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .component-info {
+    display: none;
+    margin-bottom: 2rem;
+  }
+  
+  .component-info h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .component-info p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .component-info ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .component-info ul li {
+    margin-bottom: 0.5rem;
+  }

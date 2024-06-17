@@ -13,26 +13,24 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Computer Hardware Basics</a></li>
-        <li><a href="#">Inside a Computer</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">FAQs</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <section id="sidebar">
       <h2>Components</h2>
       <ul id="componentList">
-        <li><a href="#">CPU</a></li>
-        <li><a href="#">RAM</a></li>
-        <li><a href="#">HDD / SSD</a></li>
-        <li><a href="#">Motherboard</a></li>
-        <li><a href="#">GPU</a></li>
-        <li><a href="#">PSU</a></li>
-        <li><a href="#">Cooling Systems</a></li>
-        <li><a href="#">Input/Output Devices</a></li>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#ram">RAM</a></li>
+        <li><a href="#hdd-ssd">HDD / SSD</a></li>
+        <li><a href="#motherboard">Motherboard</a></li>
+        <li><a href="#gpu">GPU</a></li>
+        <li><a href="#psu">PSU</a></li>
+        <li><a href="#cooling-systems">Cooling Systems</a></li>
+        <li><a href="#input-output-devices">Input/Output Devices</a></li>
       </ul>
     </section>
     
@@ -40,6 +38,86 @@
       <h2>Welcome to Computer Hardware Basics</h2>
       <p>This website provides comprehensive information about computer hardware. Whether you're a beginner or an enthusiast, you'll find everything you need to know about the components that make up a computer.</p>
       <p>Explore our sidebar to learn more about specific hardware components!</p>
+
+      <div id="cpu" class="component-info">
+        <h3>CPU (Central Processing Unit)</h3>
+        <p>The CPU is the brain of the computer. It performs calculations and executes instructions to carry out tasks. CPUs come in various models and speeds, affecting the overall performance of a computer.</p>
+        <ul>
+          <li><strong>Clock Speed:</strong> Determines how many operations the CPU can perform per second.</li>
+          <li><strong>Cores:</strong> Multiple cores allow for better multitasking and parallel processing.</li>
+          <li><strong>Cache:</strong> Small amount of very fast memory on the CPU to store frequently used data.</li>
+        </ul>
+      </div>
+
+      <div id="ram" class="component-info">
+        <h3>RAM (Random Access Memory)</h3>
+        <p>RAM is the temporary storage that the CPU uses to store data that is actively being worked on. More RAM allows a computer to handle more tasks simultaneously and improves performance.</p>
+        <ul>
+          <li><strong>Types:</strong> DDR3, DDR4, DDR5 - each newer type offers better performance and efficiency.</li>
+          <li><strong>Capacity:</strong> Typically ranges from 4GB to 64GB or more in modern systems.</li>
+          <li><strong>Speed:</strong> Measured in MHz, faster RAM improves data processing speed.</li>
+        </ul>
+      </div>
+
+      <div id="hdd-ssd" class="component-info">
+        <h3>HDD / SSD (Hard Disk Drive / Solid State Drive)</h3>
+        <p>HDDs and SSDs are the primary storage devices for a computer. HDDs are mechanical drives with larger storage capacities at lower costs, while SSDs are faster and more reliable, though typically more expensive.</p>
+        <ul>
+          <li><strong>HDD:</strong> Uses spinning disks to read/write data, larger storage for a lower price.</li>
+          <li><strong>SSD:</strong> Uses flash memory, much faster read/write speeds, more durable.</li>
+          <li><strong>NVMe:</strong> A type of SSD with even faster data transfer rates, connected via PCIe.</li>
+        </ul>
+      </div>
+
+      <div id="motherboard" class="component-info">
+        <h3>Motherboard</h3>
+        <p>The motherboard is the main circuit board that connects all components of the computer. It houses the CPU, RAM, and other essential parts, allowing them to communicate with each other.</p>
+        <ul>
+          <li><strong>Form Factor:</strong> ATX, Micro-ATX, Mini-ITX - sizes that determine the layout and compatibility.</li>
+          <li><strong>Chipset:</strong> Determines the features and capabilities of the motherboard.</li>
+          <li><strong>Ports and Slots:</strong> Includes USB, PCIe slots, SATA ports, etc., for connecting components.</li>
+        </ul>
+      </div>
+
+      <div id="gpu" class="component-info">
+        <h3>GPU (Graphics Processing Unit)</h3>
+        <p>The GPU is responsible for rendering images and videos. It is crucial for gaming, video editing, and other graphics-intensive tasks. Dedicated GPUs have their own memory and processing power.</p>
+        <ul>
+          <li><strong>Integrated GPU:</strong> Built into the CPU, suitable for basic tasks and light gaming.</li>
+          <li><strong>Dedicated GPU:</strong> Separate from the CPU, with its own memory (VRAM) for better performance.</li>
+          <li><strong>VRAM:</strong> The GPU's memory, important for handling textures and graphical data.</li>
+        </ul>
+      </div>
+
+      <div id="psu" class="component-info">
+        <h3>PSU (Power Supply Unit)</h3>
+        <p>The PSU converts electrical power from an outlet into usable power for the computer's components. It supplies power to the motherboard, drives, and other hardware components.</p>
+        <ul>
+          <li><strong>Wattage:</strong> Determines how much power the PSU can supply, important for high-end components.</li>
+          <li><strong>Efficiency Rating:</strong> 80 Plus certification indicates efficiency, reducing waste heat and electricity usage.</li>
+          <li><strong>Modular PSUs:</strong> Allow users to connect only the cables they need, reducing clutter.</li>
+        </ul>
+      </div>
+
+      <div id="cooling-systems" class="component-info">
+        <h3>Cooling Systems</h3>
+        <p>Cooling systems, including fans and liquid cooling setups, are essential for maintaining optimal temperatures of the CPU, GPU, and other components to prevent overheating and ensure efficient performance.</p>
+        <ul>
+          <li><strong>Air Cooling:</strong> Uses fans and heatsinks to dissipate heat, common and cost-effective.</li>
+          <li><strong>Liquid Cooling:</strong> Uses liquid to transfer heat away from components, more efficient but expensive.</li>
+          <li><strong>Thermal Paste:</strong> Applied between the CPU/GPU and heatsink to improve heat transfer.</li>
+        </ul>
+      </div>
+
+      <div id="input-output-devices" class="component-info">
+        <h3>Input/Output Devices</h3>
+        <p>Input devices like keyboards and mice allow users to interact with the computer, while output devices like monitors and printers display or produce the results of the computer's processes.</p>
+        <ul>
+          <li><strong>Input Devices:</strong> Keyboards, mice, scanners, etc., used to input data into the computer.</li>
+          <li><strong>Output Devices:</strong> Monitors, printers, speakers, etc., used to receive data from the computer.</li>
+          <li><strong>Peripheral Connections:</strong> USB, Bluetooth, and other connections for input/output devices.</li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -59,66 +137,15 @@
 </head>
 <body>
   <header>
-    <h1>Computer Hardware Basics</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Computer Hardware Basics</a></li>
-        <li><a href="#">Inside a Computer</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">FAQs</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="sidebar">
-      <h2>Components</h2>
-      <ul id="componentList">
-        <li><a href="#cpu">CPU</a></li>
-        <li><a href="#ram">RAM</a></li>
-        <li><a href="#storage">HDD / SSD</a></li>
-        <li><a href="#motherboard">Motherboard</a></li>
-        <li><a href="#gpu">GPU</a></li>
-        <li><a href="#psu">PSU</a></li>
-        <li><a href="#cooling">Cooling Systems</a></li>
-        <li><a href="#io">Input/Output Devices</a></li>
-      </ul>
-    </section>
-    
-    <section id="content">
-      <div id="cpu" class="component-info">
-        <h2>CPU (Central Processing Unit)</h2>
-        <p>The CPU is often called the brain of the computer. It performs calculations and executes instructions that allow software to run.</p>
-      </div>
-      <!-- Repeat the above div structure for each component -->
-    </section>
-
-
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Computer Hardware Basics. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-<section id="content">
-    <div id="cpu" class="component-info">
-      <h2>CPU (Central Processing Unit)</h2>
-      <p>The CPU is often called the brain of the computer. It performs calculations and executes instructions that allow software to run.</p>
-      <p>Additional information about the CPU...</p>
-    </div>
-    <!-- Repeat the above div structure for each component -->
-  </section><section id="inside-computer" class="component-info">
-    <h2>Inside a Computer</h2>
-    <ul>
-      <li><strong>CPU (Central Processing Unit):</strong> The brain of the computer that executes instructions and performs calculations.</li>
-      <li><strong>RAM (Random Access Memory):</strong> Temporary storage used by the computer for actively running programs and data.</li>
-      <li><strong>Storage Devices:</strong> Hard Disk Drives (HDDs) or Solid State Drives (SSDs) used for permanent data storage.</li>
-      <li><strong>Motherboard:</strong> Main circuit board connecting all components together.</li>
-      <li><strong>GPU (Graphics Processing Unit):</strong> Responsible for rendering graphics and images on the display.</li>
-      <li><strong>PSU (Power Supply Unit):</strong> Converts AC power from the outlet into DC power for the computer's components.</li>
-      <li><strong>Cooling Systems:</strong> Fans and heat sinks to keep components cool and prevent overheating.</li>
-    </ul>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Computer Hardware Basics</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+        <div class="container">
+        
