@@ -1,112 +1,237 @@
+/* General reset and styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-color: #f9f/* General reset and styling */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav ul li {
-    margin: 0 1rem;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    display: flex;
-    flex: 1;
-  }
-  
-  #sidebar {
-    background-color: #fff;
-    padding: 1rem;
-    width: 250px;
-    border-right: 1px solid #ccc;
-  }
-  
-  #sidebar h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  #componentList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #componentList li {
-    margin-bottom: 0.5rem;
-  }
-  
-  #componentList a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #componentList a:hover {
-    color: #007bff;
-  }
-  
-  #content {
-    flex: 1;
-    padding: 1rem;
-  }
-  
-  .component-info {
-    display: none;
-    margin-bottom: 2rem;
-  }
-  
-  .component-info h3 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .component-info p {
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .component-info ul {
-    list-style: none;
-    padding-left: 1rem;
-  }
-  
-  .component-info ul li {
-    margin-bottom: 0.5rem;
-  }
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f8f9fa; /* Light gray on hover */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#sidebar {
+  background-color: #f8f9fa; /* Light gray */
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#sidebar h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#componentList {
+  list-style: none;
+  padding: 0;
+}
+
+#componentList li {
+  margin-bottom: 0.5rem;
+}
+
+#componentList a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#componentList a:hover {
+  color: #007bff;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.component-info {
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.component-info h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.component-info p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.component-info ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.component-info ul li {
+  margin-bottom: 0.5rem;
+}/* General reset and styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f8f9fa; /* Light gray on hover */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#sidebar {
+  background-color: #f8f9fa; /* Light gray */
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#sidebar h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#componentList {
+  list-style: none;
+  padding: 0;
+}
+
+#componentList li {
+  margin-bottom: 0.5rem;
+}
+
+#componentList a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#componentList a:hover {
+  color: #007bff;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.component-info {
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.component-info h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.component-info p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.component-info ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.component-info ul li {
+  margin-bottom: 0.5rem;
+}
